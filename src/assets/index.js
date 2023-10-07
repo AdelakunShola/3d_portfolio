@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logoo from "./logoo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -31,7 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo,
+  logoo,
   backend,
   creator,
   mobile,
