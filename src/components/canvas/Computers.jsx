@@ -16,7 +16,7 @@ const Computers = ({ isMobile }) => {
         penumbra={1}
         intensity={1}
         castShadow
-        shadow-mapSize={isMobile ? 512 : 1024} // Adjust shadow map size based on device
+        shadow-mapSize={isMobile ? 200 : 1024} // Adjust shadow map size based on device
       />
       <pointLight intensity={1} />
       <primitive
