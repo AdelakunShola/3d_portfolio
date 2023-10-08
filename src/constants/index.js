@@ -6,6 +6,7 @@ import {
     javascript,
     typescript,
     html,
+    php,
     css,
     reactjs,
     redux,
@@ -60,16 +61,6 @@ import {
   ];
   
   const technologies = [
-    
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-
     {
       name: "HTML 5",
       icon: html,
@@ -82,7 +73,22 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    
+    {
+      name: "PHP",
+      icon: php,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -95,10 +101,7 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+  
     
     
     

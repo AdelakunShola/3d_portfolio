@@ -1,12 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
-
+import { Decal, Float, Preload, useTexture } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
@@ -19,7 +13,7 @@ const Ball = (props) => {
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -36,16 +30,14 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icons }) => {
   return (
-    <Canvas
-     
-    >
+    <Canvas>
       <Suspense fallback={<CanvasLoader />}>
-   
-        <Ball imgUrl={icon} />
+        {icons.map((icon, index) => (
+          <Ball key={index} imgUrl={icon} />
+        ))}
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
