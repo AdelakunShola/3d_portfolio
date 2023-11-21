@@ -1,11 +1,11 @@
 Model Information:
-* title:	Gaming Desktop PC
-* source:	https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66
-* author:	Yolala1232 (https://sketchfab.com/Yolala1232)
+* title:	My Workspace. XYZ
+* source:	https://sketchfab.com/3d-models/my-workspace-xyz-a0c8b0c64023406fb75826cb501f6003
+* author:	TrickyEgor (https://sketchfab.com/trickyegor)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Gaming Desktop PC" (https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66) by Yolala1232 (https://sketchfab.com/Yolala1232) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "My Workspace. XYZ" (https://sketchfab.com/3d-models/my-workspace-xyz-a0c8b0c64023406fb75826cb501f6003) by TrickyEgor (https://sketchfab.com/trickyegor) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
