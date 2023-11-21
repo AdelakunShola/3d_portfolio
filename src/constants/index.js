@@ -21,6 +21,7 @@ import {
     tesla,
     shopify,
     carrent,
+    hero,
     jobit,
     tripguide,
     threejs,

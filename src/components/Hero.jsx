@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
+import hero from "../assets/hero.png";
 
 const Hero = () => {
   return (
@@ -26,7 +27,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <img
+        src={hero} // Update this with the correct path to your image
+        alt="Picture"
+        style={{ width: "100%", height: "auto", paddingTop: "300px", }}
+      />
       
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
