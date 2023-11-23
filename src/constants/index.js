@@ -6,7 +6,6 @@ import {
     javascript,
     typescript,
     html,
-    php,
     css,
     reactjs,
     redux,
@@ -21,7 +20,6 @@ import {
     tesla,
     shopify,
     carrent,
-    hero,
     jobit,
     tripguide,
     threejs,
@@ -75,10 +73,6 @@ import {
       icon: javascript,
     },
     {
-      name: "PHP",
-      icon: php,
-    },
-    {
       name: "TypeScript",
       icon: typescript,
     },
@@ -102,10 +96,22 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-  
-    
-    
-    
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
+    {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "figma",
+      icon: figma,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
   ];
   
   const experiences = [
