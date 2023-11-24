@@ -84,7 +84,7 @@ const Works = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: "-80px",
+        centerPadding: "60px",
       },
     },
     {
