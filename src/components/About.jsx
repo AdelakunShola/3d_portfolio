@@ -28,8 +28,9 @@ const About = () => {
       {
         breakpoint: 768, // Adjust the breakpoint as needed
         settings: {
-          slidesToShow: 1,
-          centerMode: true, 
+          slidesToShow: 3,
+          centerMode: true,
+           
         },
       },
     ],
