@@ -15,11 +15,11 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <Tilt
       options={{
-        max: 45,
+        max: 25,
         scale: 1,
         speed: 450,
       }}
-      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full mx-auto'
     >
       <div className='relative w-full h-[230px]'>
         <img
@@ -72,19 +72,19 @@ const Works = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Show one slide at a time
+    slidesToShow: 3, // Show one slide at a time
     slidesToScroll: 1,
     autoplay: false,
     
     
     responsive: [
       {
-        breakpoint: 1024, // Adjust as needed
+        breakpoint: 1124, // Adjust as needed
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        
-        centerPadding: "60px",
+        centerMode: true,
+        centerPadding: "-80px",
       },
     },
     {
@@ -92,8 +92,8 @@ const Works = () => {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false,
-        centerPadding: "0",
+        centerMode: true,
+        centerPadding: "60px",
       },
     },
     {
