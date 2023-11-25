@@ -14,12 +14,13 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <Tilt
-      options={{
-        max: 25,
-        scale: 1,
-        speed: 450,
-      }}
-      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full mx-auto'
+    options={{
+      max: 15, // Adjust as needed
+      scale: 1,
+      speed: 450,
+    }}
+      
+      className='bg-tertiary p-5 rounded-2xl sm:w-[350px] w-full mx-auto'
     >
       <div className='relative w-full h-[230px]'>
         <img
@@ -74,10 +75,67 @@ const Works = () => {
     speed: 500,
     slidesToShow: 3, // Show one slide at a time
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     
     
     responsive: [
+
+
+      {
+        breakpoint: 1018, // Adjust as needed
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "-97px",
+        
+      },
+    },
+
+      {
+        breakpoint: 1121, // Adjust as needed
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "87px",
+        
+      },
+    },
+
+      {
+        breakpoint: 1126, // Adjust as needed
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "-37px",
+        
+      },
+    },
+
+      {
+        breakpoint: 1156, // Adjust as needed
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "-40px",
+        
+      },
+    },
+
+      {
+        breakpoint: 1183, // Adjust as needed
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "-20px",
+        
+      },
+    },
+
       {
         breakpoint: 1124, // Adjust as needed
       settings: {
@@ -85,29 +143,53 @@ const Works = () => {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: "60px",
+        
       },
     },
+
+    {
+      breakpoint: 1002, // Adjust as needed
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: "-10px",
+      
+    },
+  },
+
+  {
+    breakpoint: 819, // Adjust as needed
+  settings: {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "-30px",
+    
+  },
+},
+
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: "60px",
-      },
+        centerPadding: "0px",
+         },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false,
+        centerMode: true,
         centerPadding: "0",
       },
     },
     // Add more breakpoints as needed
   ],
-};
+  };
 
   return (
     <>
@@ -125,7 +207,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 w-full max-w-6xl mx-auto gap-6'>
+      <div className='mt-20 w-full max-w-6xl mx-auto gap-12'>
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} {...project} />

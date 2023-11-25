@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { EarthCanvas } from "./canvas";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -67,6 +68,8 @@ const Experience = () => {
           Work Experience.
         </h2>
       </motion.div>
+
+      <EarthCanvas />
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
