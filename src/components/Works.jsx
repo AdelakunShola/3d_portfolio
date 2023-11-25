@@ -206,7 +206,7 @@ const Works = () => {
           {/* Your project description */}
         </motion.p>
       </div>
-
+ 
       <div className='mt-20 w-full max-w-6xl mx-auto gap-12'>
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (

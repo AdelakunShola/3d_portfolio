@@ -111,7 +111,7 @@ const About = () => {
         },
       },
 
-
+ 
       {
         breakpoint: 488,
         settings: {
