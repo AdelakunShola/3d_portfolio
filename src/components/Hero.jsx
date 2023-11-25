@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-
-import hero from "../assets/hero.png";
+import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto flex flex-col items-center`}>
+    <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -14,25 +13,20 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
- 
+
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Shola</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I specialize in crafting efficient ERP, CRM, and web applications. 
-          to elevate your business...
+            I develop web applications. to help <br className='sm:block hidden' />
+            your business stand out...
              
           </p>
         </div>
       </div>
 
-      <img
-        src={hero} // Update this with the correct path to your image
-        alt="Picture"
-        style={{ width: "80%", height: "auto", paddingTop: "300px", }}
-      />
-      
+      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

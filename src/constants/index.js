@@ -8,10 +8,13 @@ import {
     html,
     css,
     reactjs,
+    redux,
     tailwind,
     nodejs,
-    php,
     mongodb,
+    git,
+    figma,
+    docker,
     meta,
     starbucks,
     tesla,
@@ -19,7 +22,7 @@ import {
     carrent,
     jobit,
     tripguide,
-   
+    threejs,
   } from "../assets";
   
   export const navLinks = [
@@ -54,10 +57,6 @@ import {
       title: "Content Creator",
       icon: creator,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
   ];
   
   const technologies = [
@@ -68,10 +67,6 @@ import {
     {
       name: "CSS 3",
       icon: css,
-    },
-    {
-      name: "PHP",
-      icon: php,
     },
     {
       name: "JavaScript",
@@ -85,7 +80,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -98,24 +96,25 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-   
-   
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
+    {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "figma",
+      icon: figma,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
   ];
   
   const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "AMT WIRELESS",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
     {
       title: "React.js Developer",
       company_name: "AMT WIRELESS",
@@ -198,27 +197,6 @@ import {
   ];
   
   const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
     {
       name: "Car Rent",
       description:
