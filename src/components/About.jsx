@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -37,106 +36,6 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    responsive: [
-
-
-      {
-        breakpoint: 1133,
-        settings: {
-          slidesToShow: 4,
-          centerPadding: "-20px",
-          centerMode: true,
-        },
-      },
-
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 3,
-          centerPadding: "0px",
-          centerMode: true,
-        },
-      },
-
-      {
-        breakpoint: 879,
-        settings: {
-          slidesToShow: 3,
-          centerPadding: "-30px",
-          centerMode: true,
-        },
-      },
-
-      {
-        breakpoint: 815,
-        settings: {
-          slidesToShow: 3,
-          centerPadding: "-50px",
-          centerMode: true,
-        },
-      },
-
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 2,
-          centerPadding: "20px",
-          centerMode: true,
-        },
-      },
-
-
-      {
-        breakpoint: 667,
-        settings: {
-          slidesToShow: 2,
-          centerPadding: "-20px",
-          centerMode: true,
-        },
-      },
-
-      {
-        breakpoint: 588,
-        settings: {
-          slidesToShow: 2,
-          centerPadding: "-30px",
-          centerMode: true,
-        },
-      },
-
- 
-      {
-        breakpoint: 488,
-        settings: {
-          slidesToShow: 2,
-          centerPadding: "-50px",
-          centerMode: true,
-        },
-      },
-
-
-      {
-        breakpoint: 410,
-        settings: {
-          slidesToShow: 2,
-          centerPadding: "-50px",
-          centerMode: true,
-        },
-      },
-
-      
-
-      
-    ],
-  };
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -155,12 +54,10 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20'>
-        <Slider {...sliderSettings}>
-          {services.map((service, index) => (
-            <ServiceCard key={service.title} index={index} {...service} />
-          ))}
-        </Slider>
+      <div className='mt-20 flex flex-wrap gap-10'>
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
       </div>
     </>
   );
