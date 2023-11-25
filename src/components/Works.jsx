@@ -75,7 +75,7 @@ const Works = () => {
     speed: 500,
     slidesToShow: 3, // Show one slide at a time
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     
     
     responsive: [
